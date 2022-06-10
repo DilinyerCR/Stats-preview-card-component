@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet: hsl(277, 64%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --Slightly-transparentP: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparentS: hsla(0, 0%, 100%, 0.6);
+    --Layer: rgba(110,30,160,0.7);
+}
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--Very-dark-blue);
+}
+main {
+    height: 782px;
+    width: 328px;
+    margin: 80px auto 40px auto;
+    background-color: var(--Dark-desaturated-blue);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/*? -----------------Section # 1----------------- */
+
+.image {
+    width: 100%;
+    height: 240px;
+    background-size: cover;
+    background-image: url(/images/image-header-mobile.jpg);
+}
+#layer {
+    width: 100%;
+    height: 240px;
+    background-color: var(--Layer);
+}
+
+/*? -----------------Section # 2----------------- */
+
+.section2 {
+    padding: 40px 33px;
+    text-align: center;
+}
+h1 {
+    color: var(--White);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8em;
+    height: 115px;
+}
+p {
+    color: var(--Slightly-transparentP);
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    line-height: 25px;
+    height: 137px;
+}
+span {
+    color: var(--Soft-violet);
+}
+.numbers {
+    line-height: 25px;
+    color: var(--Slightly-transparentS);
+}
+.amount {
+    font-size: 1.4em;
+    color: var(--White);
+}
+.concept {
+    margin-bottom: 33px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+.attribution {
+    padding-bottom: 20px;
+    font-size: 14px; text-align: center;
+    color: var(--White);
+}
+.attribution a {
+    color: hsl(227, 28%, 46%);
+    font-size: 16px;
+}
+.attribution a:hover {
+    color: hsl(226, 13%, 46%);
+    transition: 0.5s;
+}
+
+/*? -----------------MEDIA QUERIES----------------- */
+
+@media screen and (min-width: 1200px) {
+    main {
+        width: 1110px;
+        height: 448px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .image {
+        width: 540px;
+        height: 100%;
+        background-image: url(/images/image-header-desktop.jpg);
+    }
+    #layer {
+        height: 100%;
+    }
+    .section2 {
+        text-align: left;
+        padding: 70px 70px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        margin-right: 70px;
+    }
+    .numbers {
+        margin-right: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
